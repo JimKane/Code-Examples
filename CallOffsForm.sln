@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallOffsForm", "CallOffsForm\CallOffsForm.csproj", "{D112EEF0-B977-4E69-853F-7E5CE6BF9396}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallOffModel", "CallOffModel\CallOffModel.csproj", "{94EB8CD9-D7A6-4B0F-B6B2-BCC96D812B04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D112EEF0-B977-4E69-853F-7E5CE6BF9396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D112EEF0-B977-4E69-853F-7E5CE6BF9396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D112EEF0-B977-4E69-853F-7E5CE6BF9396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D112EEF0-B977-4E69-853F-7E5CE6BF9396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94EB8CD9-D7A6-4B0F-B6B2-BCC96D812B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94EB8CD9-D7A6-4B0F-B6B2-BCC96D812B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94EB8CD9-D7A6-4B0F-B6B2-BCC96D812B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94EB8CD9-D7A6-4B0F-B6B2-BCC96D812B04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
