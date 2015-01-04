@@ -8,12 +8,12 @@ namespace CallOffModel
 {
     public class CallOff
     {
-        DateTime _date;
+        DateTime _callOffdate;
 
-        public DateTime Date
+        public DateTime CallOffDate
         {
-            get { return _date; }
-            set { _date = value; }
+            get { return _callOffdate; }
+            set { _callOffdate = value; }
         }
         int _amount;
 
@@ -25,7 +25,7 @@ namespace CallOffModel
         public CallOff(DateTime date, int amount)
         {
             this._amount = amount;
-            this._date = date;
+            this._callOffdate = date;
         }
     }
 }

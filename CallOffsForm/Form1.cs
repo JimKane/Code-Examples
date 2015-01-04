@@ -26,10 +26,12 @@ namespace CallOffsForm
             CallOff off1 = new CallOff(DateTime.Today, 150);
             CallOff off2 = new CallOff(DateTime.Today, 90);
             CallOff off3 = new CallOff(DateTime.Today, 10);
-            List<CallOff> callOffs = new List<CallOff>();
+            BindingList<CallOff> callOffs = new BindingList<CallOff>();
             callOffs.Add(off1);
             callOffs.Add(off3);
             callOffs.Add(off2);
+            dataGridView1.DataSource = callOffs.Select(myClass => new { myClass.CallOffDate, myClass.Amount }).ToList();
+
             dataGridView1.DataSource = callOffs;
         }
 
@@ -77,6 +79,19 @@ namespace CallOffsForm
                 sum += d;
             }
             return sum;
+        }
+
+        private void dataGridView1_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
+        {
+            MessageBox.Show("Dafuck?");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow item in this.dataGridView1.SelectedRows)
+            {
+                dataGridView1.Rows.RemoveAt(item.Index);
+            }
         }
     }
 }
